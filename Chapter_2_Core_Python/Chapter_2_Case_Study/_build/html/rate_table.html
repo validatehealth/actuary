@@ -1,0 +1,135 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>rate_table package &#8212; Rate Table  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rate-table-package">
+<h1>rate_table package<a class="headerlink" href="#rate-table-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rate_table.RateTable">
+<span id="rate-table-ratetable-module"></span><h2>rate_table.RateTable module<a class="headerlink" href="#module-rate_table.RateTable" title="Permalink to this headline">¶</a></h2>
+<p>This class is used to represent an actuarial rate table</p>
+<dl class="class">
+<dt id="rate_table.RateTable.RateTable">
+<em class="property">class </em><code class="descclassname">rate_table.RateTable.</code><code class="descname">RateTable</code><span class="sig-paren">(</span><em>age_start</em>, <em>age_end</em>, <em>step</em>, <em>left</em><span class="sig-paren">)</span><a class="headerlink" href="#rate_table.RateTable.RateTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="rate_table.RateTable.RateTable.get_rate">
+<code class="descname">get_rate</code><span class="sig-paren">(</span><em>age</em><span class="sig-paren">)</span><a class="headerlink" href="#rate_table.RateTable.RateTable.get_rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a single rate for a given age
+:param age: the lookup age
+:return: the rate for the lookup age or 0 if the rates are not set for the rate table</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="rate_table.RateTable.RateTable.set_rates">
+<code class="descname">set_rates</code><span class="sig-paren">(</span><em>rates</em><span class="sig-paren">)</span><a class="headerlink" href="#rate_table.RateTable.RateTable.set_rates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the rates for every age band
+:param rates: a list of rates for the age band
+:return: whether or not the rates were set for the rate table</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="rate-table-testratetables-module">
+<h2>rate_table.TestRateTables module<a class="headerlink" href="#rate-table-testratetables-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-rate_table">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-rate_table" title="Permalink to this headline">¶</a></h2>
+<p>This is a module for a rate table</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Rate Table</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Andrew Webster.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/rate_table.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
