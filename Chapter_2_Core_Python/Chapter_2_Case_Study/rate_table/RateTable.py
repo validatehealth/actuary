@@ -18,7 +18,7 @@ class RateTable:
         self.age_start = age_start
         self.age_end = age_end
         self.step = step
-        self.ages = list(range(age_start, age_end, step))
+        self.ages = list(range(age_start, age_end + 1, step)) # Need to add one to include age_end
         self.left = left
         self.rates = []
 
@@ -28,9 +28,8 @@ class RateTable:
         :param rates: a list of rates for the age band
         :return: whether or not the rates were set for the rate table
         """
-        ages = self.ages
-        if len(rates) == len(ages):
-            self.rates = rates
+        if len(rates) == len(self.ages):
+            self.rates.extend(rates)
             return True
         else:
             return False
