@@ -55,3 +55,12 @@ class RateTable:
             if left:
                 age_index = age_index - 1
         return rates[age_index]
+
+    def __repr__(self):
+        ages = self.ages
+        rates = self.rates
+        if len(rates) > 0:
+            table_rows = ['Age {} has rate {}'.format(age, rate) for age, rate in zip(ages, rates)]
+        else:
+            table_rows = ['Age {}'.format(age) for age in ages]
+        return '\n'.join(table_rows)
