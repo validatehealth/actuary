@@ -3,7 +3,7 @@ This package contains the code examples for a series of three webinars sponsored
 <ul>
   <li><a href="https://www.actexmadriver.com/product.aspx?id=453140807">Python for Actuaries: Introduction to Data Analysis</a></li>
   <li><a href="https://www.actexmadriver.com/product.aspx?id=453140950">Python for Actuaries: Advanced Data Analysis Techniques</a></li>
-  <li><a href="https://www.actexmadriver.com/product.aspx?id=453142503">Statistical Modeling in Python</li>
+  <li><a href="https://www.actexmadriver.com/product.aspx?id=453142503">Statistical Modeling in Python</a></li>
 </ul>
 Reasons as to why actuaries should evaluate using Python for actuarial calculations appear here:
 <ul>
