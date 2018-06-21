@@ -7,15 +7,18 @@ from scipy import stats
 from sklearn import linear_model as lm
 
 from ..utils.formatting import format_perc
-"""
-linear_regression
-New and improved sklearn code for running a linear regression including pandas support and p-values
-Returns a linear model with R^2 automatically calculated as the r2 attribute and T-statistics/p-values as result attribute
-X: A DataFrame containing the independent variables
-y: A ndarray containing the outcome variable
-sample_weight: An optional argument containing sample weights for each row of X
-"""
+
+
 def linear_regression(X, y, sample_weight=None):
+    """
+    linear_regression
+
+    New and improved sklearn code for running a linear regression including pandas support and p-values
+    Returns a linear model with R^2 automatically calculated as the r2 attribute and T-statistics/p-values as result attribute
+    X: A DataFrame containing the independent variables
+    y: A ndarray containing the outcome variable
+    sample_weight: An optional argument containing sample weights for each row of X
+    """
     X_cols = X.columns.tolist()
     X = np.array(X)
     y = y.values.reshape(-1, 1)
