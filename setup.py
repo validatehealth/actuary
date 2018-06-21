@@ -11,7 +11,7 @@ setup(
     url='https://github.com/validatehealth/actuary',
     license='MIT',
     author='Andrew Webster',
-    author_email='andrew.webster@validatehealth.com',
+    author_email='info@validatehealth.com',
     description='This is an actuarial toolkit as introduced by three Actex webinars on Python for Actuaries',
     long_description=long_description,
     long_description_content_type='text/markdown' # This is important!
