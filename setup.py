@@ -3,8 +3,9 @@ from setuptools import setup
 setup(
     name='actuary',
     version='0.1',
-    packages=['Chapter_2_Core_Python.Chapter_2_Case_Study.rate_table'],
-    url='https://github.com/validatehealth/python-for-actuaries',
+    packages=['actuary', 'actuary.utils', 'actuary.regression',
+              'Chapter_2_Core_Python.Chapter_2_Case_Study.rate_table'],
+    url='https://github.com/validatehealth/actuary',
     license='MIT',
     author='Andrew Webster',
     author_email='andrew.webster@validatehealth.com',
