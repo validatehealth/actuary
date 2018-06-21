@@ -5,7 +5,7 @@ with open('README.md') as f:
   
 setup(
     name='actuary',
-    version='0.1',
+    version='0.2',
     packages=['actuary', 'actuary.utils', 'actuary.regression',
               'Chapter_2_Core_Python.Chapter_2_Case_Study.rate_table'],
     url='https://github.com/validatehealth/actuary',
