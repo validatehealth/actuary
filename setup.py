@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open('README.md') as f:
+    long_description = f.read()
+  
 setup(
     name='actuary',
     version='0.1',
@@ -9,5 +12,7 @@ setup(
     license='MIT',
     author='Andrew Webster',
     author_email='andrew.webster@validatehealth.com',
-    description='This is an actuarial toolkit as introduced by three Actex webinars on Python for Actuaries'
+    description='This is an actuarial toolkit as introduced by three Actex webinars on Python for Actuaries',
+    long_description=long_description,
+    long_description_content_type='text/markdown' # This is important!
 )
