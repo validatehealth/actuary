@@ -4,16 +4,16 @@ Module with helper functions to help with linear regression
 import pandas as pd
 import numpy as np
 from scipy import stats
-from sklearn import linear_model as lm
+from sklearn import linear_model
 
 from ..utils.formatting import format_perc
 
 
-def linear_regression(X, y, sample_weight=None):
+def lm(X, y, sample_weight=None):
     """
-    linear_regression
+    lm
 
-    New and improved sklearn code for running a linear regression including pandas support and p-values
+    Enhanced sklearn code for running a linear regression including pandas support and p-values
     Returns a linear model with R^2 automatically calculated as the r2 attribute and T-statistics/p-values as result attribute
     X: A DataFrame containing the independent variables
     y: A ndarray containing the outcome variable
@@ -22,8 +22,8 @@ def linear_regression(X, y, sample_weight=None):
     X_cols = X.columns.tolist()
     X = np.array(X)
     y = y.values.reshape(-1, 1)
-    model = lm.LinearRegression()
-    if sample_weight:
+    model = linear_model.LinearRegression()
+    if sample_weight is not None:
         model.fit(X, y, sample_weight=sample_weight)
     else:
         model.fit(X, y)
