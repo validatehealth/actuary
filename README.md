@@ -12,3 +12,5 @@ Reasons as to why actuaries should evaluate using Python for actuarial calculati
 <li><a href="https://blog.actexmadriver.com/2018/01/16/melting-data-in-python-to-discover-6-million-in-missed-risk-adjustment/">Melting Data in Python to Discover $6 Million in Missed Risk Adjustment</a></li>
 <li><a href="https://blog.actexmadriver.com/2018/06/13/why-actuaries-should-start-paying-attention-to-python/">Why Actuaries Should Start Paying Attention to Python by Andrew Webster</a></li>
 </ul>
+
+Install using: pip install actuary
